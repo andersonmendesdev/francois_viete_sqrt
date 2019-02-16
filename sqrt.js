@@ -10,7 +10,7 @@ const sqrt = number =>{
     let estimated = 1.00
     let flag, result
     let exit = 1    
-    let precision = 0.00001
+    let precision = Math.pow(10, -5)//0.00001
 
     while(exit !== 0){
         result = estimated + ((number-( estimated*estimated ))/( 2*estimated ))
